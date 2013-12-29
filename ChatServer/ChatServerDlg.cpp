@@ -192,7 +192,7 @@ void CChatServerDlg::OnSendInfo()
 	char *buff=(char*)&uinf;
 
 	m_Server.m_Client.Send(buff,sizeof(userinfo));
-
+	GetDlgItem(IDC_CHAT_EDIT)->SetWindowTextA("");
 }
 
 void CChatServerDlg::OnStart() 
